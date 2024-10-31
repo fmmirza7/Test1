@@ -20,9 +20,9 @@ symbol = st.sidebar.text_input('Please enter the stock symbol: ', 'NVDA').upper(
 # Selection for a specific time frame.
 col1, col2 = st.sidebar.columns(2, gap="medium")
 with col1:
-    sdate = st.date_input('Start Date',value=datetime.date(2024,1,1))
+    start_date = st.date_input('Start Date',value=datetime.date(2024,1,1))
 with col2:
-    edate = st.date_input('End Date',value=datetime.date.today())
+    end_date = st.date_input('End Date',value=datetime.date.today())
 
 st.title(f"{symbol}")
 
@@ -37,7 +37,7 @@ else:
 
 from datetime import datetime
 
-start_date = st.slider("Data from:", value = datetime(2020, 1, 1), format = "DD/MM/YYYY")
+start_date = st.slider("Data from:", value = datetime(2024, 1, 1), format = "DD/MM/YYYY")
 st.write("Start Date:", start_date)
 
 end_date = st.slider("To:", value = datetime(2024, 10, 31), format = "DD/MM/YYYY")
