@@ -40,7 +40,7 @@ from datetime import datetime
 start_date = st.slider("Data from:", value = datetime(2020, 1, 1), format = "DD/MM/YYYY")
 st.write("Start Date:", start_date)
 
-end_date = st.slider("To:", value = datetime(2023, 1, 1), format = "DD/MM/YYYY")
+end_date = st.slider("To:", value = datetime(2024, 10, 31), format = "DD/MM/YYYY")
 st.write("End Date:", end_date)
 
 data = yf.download(symbol,start=start_date,end=end_date)
