@@ -1,0 +1,6 @@
+streamlit
+matplotlib
+datetime
+plotly
+appdirs
+yfinance
